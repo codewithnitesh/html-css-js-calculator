@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1 class="text-center">Calculator</h1>
+    <section class="flex flex-column flex-center">
+        <div class="container">
+            <label id="message" class="message text-right"></label>
+        </div>
+        <div class="container">
+            <input class="expression" id="expression" disabled />
+        </div>
+        <div class="container">
+            <div class="flex flex-right">
+                <button class="button" id="clear" onclick="buttonClick(event)">C</button>
+                <button class="button" id="back" onclick="buttonClick(event)">←</button>
+                <button class="button" id="mutiplication" onclick="buttonClick(event)">*</button>
+            </div>
+
+            <div class="flex flex-right">
+                <button class="button" id="seven" onclick="buttonClick(event)">7</button>
+                <button class="button" id="eight" onclick="buttonClick(event)">8</button>
+                <button class="button" id="nine" onclick="buttonClick(event)">9</button>
+                <button class="button" id="division" onclick="buttonClick(event)">/</button>
+            </div>
+
+            <div class="flex flex-right">
+                <button class="button" id="four" onclick="buttonClick(event)">4</button>
+                <button class="button" id="five" onclick="buttonClick(event)">5</button>
+                <button class="button" id="siz" onclick="buttonClick(event)">6</button>
+                <button class="button" id="addition" onclick="buttonClick(event)">+</button>
+            </div>
+
+            <div class="flex flex-right">
+                <button class="button" id="one" onclick="buttonClick(event)">1</button>
+                <button class="button" id="two" onclick="buttonClick(event)">2</button>
+                <button class="button" id="three" onclick="buttonClick(event)">3</button>
+                <button class="button" id="subtraction" onclick="buttonClick(event)">-</button>
+            </div>
+
+            <div class="flex flex-right flex-last">
+                <button class="button" id="decimalPoint" onclick="buttonClick(event)">.</button>
+                <button class="button" id="zero" onclick="buttonClick(event)">0</button>
+                <button class="button" id="equalTo" onclick="buttonClick(event)">=</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
